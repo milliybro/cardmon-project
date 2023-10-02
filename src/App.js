@@ -26,27 +26,27 @@ function App() {
     JSON.parse(localStorage.getItem(DEBTS)) || [
       {
         id: "1",
-        name: "Azamat",
-        deadline: "2023-09-30",
-        amount: 1000,
-        phone: "994571234",
-        description: "Aniq va'da bergan !",
+        name: "Shohnazar",
+        deadline: "2023-10-10",
+        amount: 518,
+        phone: "991431814",
+        description: "Tochna! qaytarib beraman",
       },
       {
         id: "2",
-        name: "Shohrux",
-        deadline: "2023-10-02",
-        amount: 2000,
-        phone: "9983431234",
-        description: "Bfd fdjsf lkfj dlskf  !",
+        name: "Haydar",
+        deadline: "2023-10-5",
+        amount: 15000,
+        phone: "900000000",
+        description: "Jentraga",
       },
       {
         id: "3",
-        name: "Nodirbek",
-        deadline: "2023-10-01",
-        amount: 1500,
+        name: "Shavkat",
+        deadline: "2023-10-2",
+        amount: 150,
         phone: "997777777",
-        description: "Ffdf kfjdk keeeqw fdsfds !",
+        description: "Qizim bilan uchrashishim kerak",
       },
     ]
   );
@@ -153,7 +153,7 @@ function App() {
             }
           />
           <Route path="debts/:debtId" element={<DebtPage debts={debts} />} />
-          <Route path="transaction" element={<TransactionPage />} />
+          <Route path="transaction" element={<TransactionPage debts={debts} />} />
         </Route>
       </Routes>
     </BrowserRouter>

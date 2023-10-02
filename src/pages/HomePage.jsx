@@ -17,7 +17,7 @@ const HomePage = ({ debts }) => {
       <div className="container">
         <div className="home-card">
           <p className="home-card-text">
-            Total Number of Debtholders: <span className="bg-success p-2 my-0 py-0 rounded text-white">{debts.length}</span>
+            Total Number of Debts: <span className="bg-success p-2 my-0 py-0 rounded text-white">{debts.length}</span>
           </p>
           <p className="home-card-text">Total Amount of Debts: <span className="bg-info p-2 my-0 py-0 rounded text-white">{totalDebts}$</span></p>
         </div>
