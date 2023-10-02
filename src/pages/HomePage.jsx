@@ -15,7 +15,7 @@ const HomePage = ({ debts }) => {
   };
   let totalDebts = getDebtsAmount();
   let income = 16254;
-  let balance =income - totalDebts;
+  let balance = income - totalDebts;
   return (
     <section className="py-5 my-5">
       <div className="container">
@@ -31,13 +31,23 @@ const HomePage = ({ debts }) => {
           <div className="in">
             <img src={down} alt="" />
             <div>
-              <h4>EXPENSES</h4>
+              <h4>INCOME</h4>
               <p>{income} USD</p>
             </div>
           </div>
         </div>
         <div className="balance mx-auto text-center">
           <h5 className="">BALANCE: {balance} USD</h5>
+        </div>
+        <h4 className="text-center my-3">All</h4>
+        <div className="circle">
+          <div className="circle-around">
+            <div className="around-text">
+              <h5>Unspecified</h5>
+              <h5 className="text-danger">{totalDebts} USD</h5>   
+            </div>
+          </div>
+          <h6 className="percent text-white">100%</h6>
         </div>
       </div>
     </section>
