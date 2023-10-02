@@ -1,0 +1,9 @@
+header .nav-link {
+   padding-left: 0;
+   padding-right: 0;
+   font-size: 25px;
+}
+
+.active{
+   color: gold !important;
+}
