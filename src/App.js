@@ -8,9 +8,9 @@ import DebtsPage from "./pages/DebtsPage";
 import TransactionPage from "./pages/TransactionPage";
 import HomePage from "./pages/HomePage";
 import Layout from "./components/layout";
-import DebtPage from "./pages/DebtPage";
 
 import { DEBTS } from "./constants";
+import DebtPage from "./pages/DebtPage";
 
 function App() {
   const [show, setShow] = useState(false);

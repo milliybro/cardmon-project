@@ -1,0 +1,12 @@
+.home {
+   background-color: lightskyblue;
+   
+}
+.home-card{
+   display: flex;
+   justify-content: space-around;
+}
+.home-card p{
+   color: rgb(49, 49, 49);
+   font-size: 24px;
+}

@@ -1,0 +1,10 @@
+html, .login, #root  {
+   background-color: rgb(201, 229, 246);
+}
+
+.login{
+   margin-top: 200px;
+}
+.login *{
+   color: white;;
+}

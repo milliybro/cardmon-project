@@ -1,5 +1,8 @@
-import React from "react";
+import React, { Fragment } from "react";
+import { Button, Form } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+
+import "./Login.css";
 
 const LoginPage = () => {
   const navigate = useNavigate();
@@ -8,13 +11,37 @@ const LoginPage = () => {
     navigate("/home");
   };
   return (
-    <div className="vh-100 d-flex justify-content-center align-items-center">
-      <form onSubmit={login}>
-        <button type="submit" className="btn btn-success">
-          Login
-        </button>
-      </form>
-    </div>
+    <Fragment>
+      <section className="login mt-5 h-100 my-auto">
+        <div className="container d-flex justify-content-center">
+          <Form onSubmit={login} className="login">
+            <Form.Group controlId="email">
+              <Form.Label>Username</Form.Label>
+              <Form.Control
+                required
+                type="text"
+                name="email"
+                placeholder="Username
+                or
+                email"
+              />
+            </Form.Group>
+            <Form.Group controlId="password">
+              <Form.Label>Password</Form.Label>
+              <Form.Control
+                required
+                type="password"
+                name="password"
+                placeholder="password"
+              />
+            </Form.Group>
+            <Button className="mt-3 mx-auto d-flex btn-success" type="submit">
+              Login
+            </Button>
+          </Form>
+        </div>
+      </section>
+    </Fragment>
   );
 };
 
