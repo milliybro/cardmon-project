@@ -12,9 +12,10 @@ const LoginPage = () => {
   };
   return (
     <Fragment>
-      <section className="login mt-5 h-100 my-auto">
+      <section className="login mt-5 my-auto">
         <div className="container d-flex justify-content-center">
-          <Form onSubmit={login} className="login">
+          <Form onSubmit={login} className="logincha">
+            <h4 className="text-center">login</h4>
             <Form.Group controlId="email">
               <Form.Label>Username</Form.Label>
               <Form.Control
@@ -35,6 +36,7 @@ const LoginPage = () => {
                 placeholder="password"
               />
             </Form.Group>
+            <h6 className="forget">did you forget</h6>
             <Button className="mt-3 mx-auto d-flex btn-success" type="submit">
               Login
             </Button>

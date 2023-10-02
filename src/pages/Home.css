@@ -1,12 +1,53 @@
 .home {
    background-color: lightskyblue;
-   
+
 }
-.home-card{
+
+.home-card {
    display: flex;
    justify-content: space-around;
 }
-.home-card p{
+
+.home-card p {
    color: rgb(49, 49, 49);
    font-size: 24px;
+}
+
+.exin {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   gap: 20px;
+}
+
+.ex {
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+   align-items: center;
+   border: 2px solid red;
+   border-radius: 20px;
+   padding: 10px 20px;
+   width: 100%;
+}
+.in {
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+   align-items: center;
+   border: 2px solid green;
+   border-radius: 20px;
+   padding: 10px 20px;
+   width: 100%;
+}
+
+.balance h5{
+   background-color: blue;
+   margin: 0;padding: 0;
+   display: inline-block;
+   padding: 10px;
+   margin-top: 3px;
+   color: #fff;
+   border-bottom-right-radius: 20px;  
+   border-bottom-left-radius: 20px;  
 }

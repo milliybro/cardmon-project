@@ -6,5 +6,17 @@ html, .login, #root  {
    margin-top: 200px;
 }
 .login *{
-   color: white;;
+   color: #000;
+}
+.logincha{
+   background-color: aliceblue;
+   padding: 25px;
+   border-radius: 30px;
+}
+.forget{
+   font-size: 14px;
+   margin-top: 5px;
+   color: blue;
+   display: flex;
+   justify-content: end;
 }

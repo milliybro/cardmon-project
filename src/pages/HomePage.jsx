@@ -1,6 +1,8 @@
 import React from "react";
 
-import "./Home.css"
+import "./Home.css";
+import up from "../assets/up.png";
+import down from "../assets/down.png";
 
 const HomePage = ({ debts }) => {
   const getDebtsAmount = () => {
@@ -12,14 +14,30 @@ const HomePage = ({ debts }) => {
     return totalSum;
   };
   let totalDebts = getDebtsAmount();
+  let income = 16254;
+  let balance =income - totalDebts;
   return (
     <section className="py-5 my-5">
       <div className="container">
-        <div className="home-card">
-          <p className="home-card-text">
-            Total Number of Debts: <span className="bg-success p-2 my-0 py-0 rounded text-white">{debts.length}</span>
-          </p>
-          <p className="home-card-text">Total Amount of Debts: <span className="bg-info p-2 my-0 py-0 rounded text-white">{totalDebts}$</span></p>
+        <h5 className="text-center mb-4 text-primary">October</h5>
+        <div className="exin">
+          <div className="ex">
+            <img src={up} alt="" />
+            <div>
+              <h4>EXPENSES</h4>
+              <p>-{totalDebts} USD</p>
+            </div>
+          </div>
+          <div className="in">
+            <img src={down} alt="" />
+            <div>
+              <h4>EXPENSES</h4>
+              <p>{income} USD</p>
+            </div>
+          </div>
+        </div>
+        <div className="balance mx-auto text-center">
+          <h5 className="">BALANCE: {balance} USD</h5>
         </div>
       </div>
     </section>
