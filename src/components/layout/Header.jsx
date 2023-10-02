@@ -9,17 +9,17 @@ const Header = () => {
       <nav className="container">
         <ul className="nav d-flex justify-content-between">
           <li className="nav-item">
-            <NavLink className="nav-link"  to="/home">
+            <NavLink className=" nav-link"  to="/home">
               Home
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/transaction">
+            <NavLink className=" nav-link" to="/transaction">
               Transaction
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/debts">
+            <NavLink className=" nav-link" to="/debts">
               Debts
             </NavLink>
           </li>

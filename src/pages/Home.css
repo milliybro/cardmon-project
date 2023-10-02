@@ -75,7 +75,8 @@
    height: 200px;
    border-radius: 50%;
 }
-.around-text{
+
+.around-text {
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -85,7 +86,8 @@
    position: relative;
    top: 30%;
 }
+
 .percent {
-position: absolute;
-bottom: 0;
+   position: absolute;
+   bottom: 0;
 }

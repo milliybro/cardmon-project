@@ -4,13 +4,19 @@ html, .login, #root  {
 
 .login{
    margin-top: 200px;
+   position: relative;
 }
 .login *{
    color: #000;
 }
 .logincha{
+   position: absolute;
+   top: 100px;
+   display: flex;
+   flex-direction: column;
+
    background-color: aliceblue;
-   padding: 25px;
+   padding:10px 50px;
    border-radius: 30px;
 }
 .forget{
